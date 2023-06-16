@@ -5,6 +5,7 @@ import com.Interpreter.lox.Expr.Call;
 import com.Interpreter.lox.Expr.Get;
 import com.Interpreter.lox.Expr.Logical;
 import com.Interpreter.lox.Expr.Set;
+import com.Interpreter.lox.Expr.Super;
 import com.Interpreter.lox.Expr.This;
 import com.Interpreter.lox.Expr.Variable;
 
@@ -86,6 +87,12 @@ class AstPrinter implements Expr.Visitor<String> {
 
 	@Override
 	public String visitThisExpr(This expr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String visitSuperExpr(Super expr) {
 		// TODO Auto-generated method stub
 		return null;
 	}
