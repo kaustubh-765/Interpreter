@@ -8,7 +8,12 @@ import static com.Interpreter.lox.TokenType.*;
 
 class Parser {
 	
-	private static class ParseError extends RuntimeException {}
+	private static class ParseError extends RuntimeException {
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 8411601858638459681L;}
 	
 	private final List<Token> tokens;
 	private int current = 0;
@@ -381,6 +386,7 @@ class Parser {
 		return new ParseError();
 	}
 	
+	@SuppressWarnings("incomplete-switch")
 	private void synchronize() {
 		advance();
 		

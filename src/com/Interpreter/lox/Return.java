@@ -1,5 +1,6 @@
 package com.Interpreter.lox;
 
+@SuppressWarnings("serial")
 public class Return extends RuntimeException {
 	final Object value;
 	

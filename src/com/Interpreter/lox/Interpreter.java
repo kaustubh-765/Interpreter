@@ -70,6 +70,7 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void>{
 		}
 	}
 	
+	@SuppressWarnings("incomplete-switch")
 	@Override
 	public Object visitBinaryExpr(Binary expr) {
 		// TODO Auto-generated method stub
@@ -217,6 +218,7 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void>{
 		return lookupVariable(expr.keyword, expr);
 	}
 
+	@SuppressWarnings("incomplete-switch")
 	@Override
 	public Object visitUnaryExpr(Unary expr) {
 		// TODO Auto-generated method stub
